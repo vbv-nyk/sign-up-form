@@ -15,39 +15,44 @@
         <img src="images/left-image.avif" alt="">
     </div>
     <div class="right">
-        <p>Want to share your thoughts on this article? Sign Up! You can read unlimited articles without signing up but
-            are restricted from making posts on this website.</p>
-        <h3>Tell us how much you <i>love</i> plants</h3>
+        <p>Want to share your thoughts on this article? Sign Up!!! <br>You can read <i>unlimited</i> articles without
+            signing
+            up
+            but
+            are restricted from making posts.</p>
+        <p>Sign up to tell us what you think</p>
         <div class="details-container">
-            <form action="random/path">
+            <form action="random/path" id="registration" method="post">
                 <h3 class="form-header">Let's Do This !</h3>
                 <div class="input-container">
                     <label for="first_name">first name</label>
-                    <input type="text" id="first_name">
+                    <input type="text" id="first_name" required>
                 </div>
                 <div class="input-container">
                     <label for="last_name">last name</label>
-                    <input type="text" id="last_name">
+                    <input type="text" id="last_name" required>
                 </div>
                 <div class="input-container">
                     <label for="user_email">email</label>
-                    <input type="email" id="user_email">
+                    <input type="email" id="user_email" required>
                 </div>
                 <div class="input-container">
                     <label for="ph_no">Phone Number</label>
-                    <input type="text" id="ph_no">
+                    <input type="tel" id="ph_no" id="phone" minlength="8" maxlength="10" required>
                 </div>
                 <div class="input-container">
                     <label for="user_password">password</label>
-                    <input type="password" id="user_password">
+                    <input type="password" id="user_password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                        title="8 characters, atleast 1 letter and number" required>
                 </div>
                 <div class="input-container">
                     <label for="confirm_password">Confirm Password</label>
-                    <input type="text" id="confirm_password">
+                    <input type="password" id="confirm_password" required>
                 </div>
-                <button type="submit">Sign Up</button>
             </form>
         </div>
+        <button type="submit" form="registration">Sign Up</button>
+        <p>Existing user? <a href="#">Sign In</a></p>
     </div>
 </body>
 
