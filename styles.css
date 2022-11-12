@@ -1,29 +1,30 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
+    max-height: 100vh;
     display: flex;
     background-color: #F9FAFB;
-    overflow: hidden;
 }
 
 img {
     height: 100vh;
+    width: 100%;
+    float: left;
 }
 
 .right {
     display: flex;
-    width: auto;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
 }
 
 .details-container {
     display: flex;
-    width: auto;
-    align-items: center;
     background-color: white;
 }
 
@@ -99,10 +100,11 @@ input {
     border: 2px solid green;
 }
 
-#user_email:invalid,
-#ph_no:invalid {
+#user_email:invalid:focus,
+#ph_no:invalid:focus {
     border: 2px solid red;
 }
+
 
 input:focus {
     outline: none;
