@@ -15,11 +15,15 @@ img {
 
 .right {
     display: flex;
+    width: auto;
     flex-direction: column;
+    justify-content: center;
 }
 
 .details-container {
+    display: flex;
     width: auto;
+    align-items: center;
     background-color: white;
 }
 
@@ -30,6 +34,7 @@ form {
 }
 
 .form-header {
+    margin-top: 10px;
     padding-right: 100px;
 }
 
@@ -40,7 +45,7 @@ form {
 }
 
 .details-container label {
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
     font-size: 0.6rem;
     letter-spacing: 2px;
@@ -48,10 +53,20 @@ form {
 
 
 form>* {
-    margin: 15px;
+    margin-left: 30px;
+    margin-bottom: 20px;
 }
 
 
+
+p {
+    font-weight: 600;
+    padding-bottom: 20px;
+    word-wrap: break-word;
+    width: fit-content;
+    font-size: large;
+    padding-left: 30px;
+}
 
 button {
     border: none;
@@ -60,5 +75,36 @@ button {
     font-weight: bold;
     font-size: 1rem;
     padding: 1rem 5rem;
+    width: fit-content;
     border-radius: 10px;
+    margin: 30px;
+}
+
+p:last-child {
+    font-weight: 500;
+    font-size: small;
+}
+
+:link {
+    color: rgb(88, 94, 12);
+    text-decoration: none;
+}
+
+input {
+    padding: 5px 0;
+}
+
+#user_email:valid,
+#ph_no:valid {
+    border: 2px solid green;
+}
+
+#user_email:invalid,
+#ph_no:invalid {
+    border: 2px solid red;
+}
+
+input:focus {
+    outline: none;
+    border-color: blue;
 }
